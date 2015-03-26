@@ -1,0 +1,26 @@
+//
+//  RETAIL-Prefix.pch
+//  RETAIL
+//
+//  Created by Duke Cui on 15/1/27.
+//  Copyright (c) 2015年 Duke Cui. All rights reserved.
+//
+
+#ifndef RETAIL_RETAIL_Prefix_pch
+#define RETAIL_RETAIL_Prefix_pch
+
+#ifdef __OBJC__
+
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h> 
+#import "Macro.h"
+#import "Enumeration.h"
+#import "DCFoundation.h"
+#import "UIConstants.h"
+#import "ModelConstants.h" 
+#import "DebugConfigs.h"
+#import "Utilities.h"
+
+#endif
+
+#endif
