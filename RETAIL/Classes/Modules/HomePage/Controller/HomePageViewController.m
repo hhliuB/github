@@ -18,6 +18,8 @@
 #import "HPHeaderSegmentButtonProtocol.h"
 #import "HPBottomViewProtocol.h"
 
+#import "VideoViewModel.h"
+
 @interface HomePageViewController ()
 
 @property (nonatomic,strong) MainViewController *mainViewController;
@@ -31,6 +33,8 @@
 @property (nonatomic,strong) HPHeaderSegmentButtonProtocol *segmentButtonProtocol;
 @property (nonatomic,strong) HPBottomViewProtocol          *bottomProtocol;
 
+@property (nonatomic,strong) VideoViewModel *videoViewModel;
+
 @end
 
 @implementation HomePageViewController
@@ -38,6 +42,9 @@
 - (void)viewDidLoad
 {
   [super viewDidLoad];
+  [self.videoViewModel loadData:^{
+    
+  }];
   
   CGFloat width = self.view.width;
   CGFloat height = self.view.height;
@@ -120,6 +127,11 @@
     _bottomProtocol.controller = self;
   }
   return _bottomProtocol;
+}
+
+- (VideoViewModel *)videoViewModel
+{
+  return GetInstance(VideoViewModel, _videoViewModel);
 }
 
 @end

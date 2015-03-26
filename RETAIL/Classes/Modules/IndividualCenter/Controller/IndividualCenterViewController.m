@@ -48,7 +48,9 @@
 {
   [super viewDidLoad];
   
-  [self.userViewModel getUserDetailedInformation];
+  [self.userViewModel loadData:^{
+    
+  }];
   
   self.lastListIndex = -1;
   

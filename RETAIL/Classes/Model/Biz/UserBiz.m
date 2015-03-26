@@ -23,8 +23,7 @@
 
 - (void)getUserDetailedInformation
 {
-  [self.databaseOperation configValueForKey:@"nme"];
-  [self.bizOperation getUserDetailedInformation:^{
+  [self.databaseOperation getUserDetailedInformation:^{
   }];
 }
 
@@ -38,8 +37,10 @@
 
 - (MainDatabaseOperation *)databaseOperation
 {
-  
-  return [MainDatabaseOperation operationWithDatabase:self.orgDatabase];
+  if (!_databaseOperation) {
+    _databaseOperation = [MainDatabaseOperation operationWithDatabase:self.mainDatabase];
+  }
+  return _databaseOperation;
 }
 
 @end

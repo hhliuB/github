@@ -24,26 +24,10 @@
 		AB1982A11A7783AD00FE0669 /* SFAStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = AB1980EF1A7783AC00FE0669 /* SFAStorage.m */; };
 		AB1982A21A7783AD00FE0669 /* DCView.m in Sources */ = {isa = PBXBuildFile; fileRef = AB1980F21A7783AC00FE0669 /* DCView.m */; };
 		AB1982A31A7783AD00FE0669 /* DCViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AB1980F51A7783AC00FE0669 /* DCViewModel.m */; };
-		AB1982A41A7783AD00FE0669 /* CommonAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = AB1980F91A7783AC00FE0669 /* CommonAPI.m */; };
-		AB1982A51A7783AD00FE0669 /* EmployeeAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = AB1980FB1A7783AC00FE0669 /* EmployeeAPI.m */; };
-		AB1982A61A7783AD00FE0669 /* InitializationAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = AB1980FD1A7783AC00FE0669 /* InitializationAPI.m */; };
-		AB1982A71A7783AD00FE0669 /* OrgAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = AB1980FF1A7783AC00FE0669 /* OrgAPI.m */; };
-		AB1982A81A7783AD00FE0669 /* SysAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = AB1981011A7783AC00FE0669 /* SysAPI.m */; };
-		AB1982A91A7783AD00FE0669 /* ORGCommonBiz.m in Sources */ = {isa = PBXBuildFile; fileRef = AB1981041A7783AC00FE0669 /* ORGCommonBiz.m */; };
-		AB1982AA1A7783AD00FE0669 /* ORGServiceBiz.m in Sources */ = {isa = PBXBuildFile; fileRef = AB1981061A7783AC00FE0669 /* ORGServiceBiz.m */; };
-		AB1982AB1A7783AD00FE0669 /* SYSCommonBiz.m in Sources */ = {isa = PBXBuildFile; fileRef = AB1981081A7783AC00FE0669 /* SYSCommonBiz.m */; };
-		AB1982AC1A7783AD00FE0669 /* ORGCommonOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = AB19810B1A7783AC00FE0669 /* ORGCommonOperation.m */; };
-		AB1982AD1A7783AD00FE0669 /* ORGServiceOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = AB19810D1A7783AC00FE0669 /* ORGServiceOperation.m */; };
-		AB1982AE1A7783AD00FE0669 /* SYSCommonOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = AB19810F1A7783AC00FE0669 /* SYSCommonOperation.m */; };
-		AB1982AF1A7783AD00FE0669 /* SYSGetConfigOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = AB1981111A7783AC00FE0669 /* SYSGetConfigOperation.m */; };
-		AB1982B01A7783AD00FE0669 /* OrgCache.m in Sources */ = {isa = PBXBuildFile; fileRef = AB1981141A7783AC00FE0669 /* OrgCache.m */; };
-		AB1982B11A7783AD00FE0669 /* OrgServiceCache.m in Sources */ = {isa = PBXBuildFile; fileRef = AB1981161A7783AC00FE0669 /* OrgServiceCache.m */; };
-		AB1982B21A7783AD00FE0669 /* SysCache.m in Sources */ = {isa = PBXBuildFile; fileRef = AB1981181A7783AC00FE0669 /* SysCache.m */; };
 		AB1982B31A7783AD00FE0669 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB19811B1A7783AC00FE0669 /* BaseViewController.m */; };
 		AB1982B41A7783AD00FE0669 /* DCViewController+PopAndDismiss.m in Sources */ = {isa = PBXBuildFile; fileRef = AB19811D1A7783AC00FE0669 /* DCViewController+PopAndDismiss.m */; };
 		AB1982B51A7783AD00FE0669 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB19811F1A7783AC00FE0669 /* MainViewController.m */; };
 		AB1982B61A7783AD00FE0669 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB1981211A7783AC00FE0669 /* RootViewController.m */; };
-		AB1982B71A7783AD00FE0669 /* OrgStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = AB1981241A7783AC00FE0669 /* OrgStorage.m */; };
 		AB1982B81A7783AD00FE0669 /* CellSelectedBackgroundView.m in Sources */ = {isa = PBXBuildFile; fileRef = AB1981271A7783AC00FE0669 /* CellSelectedBackgroundView.m */; };
 		AB1982BC1A7783AD00FE0669 /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB19813A1A7783AC00FE0669 /* MenuViewController.m */; };
 		AB1982BD1A7783AD00FE0669 /* MenuImageStyleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AB19813E1A7783AC00FE0669 /* MenuImageStyleCell.m */; };
@@ -236,11 +220,10 @@
 		C352712A1AC2AD80001F1DC4 /* UserBizOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = C35271291AC2AD80001F1DC4 /* UserBizOperation.m */; };
 		C352712D1AC2AEC5001F1DC4 /* UserAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = C352712C1AC2AEC5001F1DC4 /* UserAPI.m */; };
 		C35271301AC2B0A1001F1DC4 /* UserViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C352712F1AC2B0A1001F1DC4 /* UserViewModel.m */; };
-		C35271391AC2B191001F1DC4 /* OrgEntities.m in Sources */ = {isa = PBXBuildFile; fileRef = C35271321AC2B191001F1DC4 /* OrgEntities.m */; };
-		C352713A1AC2B191001F1DC4 /* SysEntities.m in Sources */ = {isa = PBXBuildFile; fileRef = C35271341AC2B191001F1DC4 /* SysEntities.m */; };
-		C352713B1AC2B191001F1DC4 /* WorkEntities.m in Sources */ = {isa = PBXBuildFile; fileRef = C35271361AC2B191001F1DC4 /* WorkEntities.m */; };
-		C352713C1AC2B191001F1DC4 /* LibraryEntities.m in Sources */ = {isa = PBXBuildFile; fileRef = C35271381AC2B191001F1DC4 /* LibraryEntities.m */; };
 		C352713F1AC2C46B001F1DC4 /* MainDatabaseOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = C352713E1AC2C46B001F1DC4 /* MainDatabaseOperation.m */; };
+		C3923D3E1AC3B2850044D401 /* VideoBiz.m in Sources */ = {isa = PBXBuildFile; fileRef = C3923D3D1AC3B2850044D401 /* VideoBiz.m */; };
+		C3923D411AC3B33E0044D401 /* VideoAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = C3923D401AC3B33E0044D401 /* VideoAPI.m */; };
+		C3923D441AC3B3CD0044D401 /* VideoViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C3923D431AC3B3CD0044D401 /* VideoViewModel.m */; };
 		C3BC030F1A82114400796D08 /* DCFileExplorerView.m in Sources */ = {isa = PBXBuildFile; fileRef = C3BC030E1A82114400796D08 /* DCFileExplorerView.m */; };
 		C9862AD31A89F57D00B7B191 /* UIButton+Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = C9862ABB1A89F57D00B7B191 /* UIButton+Extensions.m */; };
 		C9862AD41A89F57D00B7B191 /* HZCalendarView.m in Sources */ = {isa = PBXBuildFile; fileRef = C9862ABD1A89F57D00B7B191 /* HZCalendarView.m */; };
@@ -304,36 +287,6 @@
 		AB1980F21A7783AC00FE0669 /* DCView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCView.m; sourceTree = "<group>"; };
 		AB1980F41A7783AC00FE0669 /* DCViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCViewModel.h; sourceTree = "<group>"; };
 		AB1980F51A7783AC00FE0669 /* DCViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCViewModel.m; sourceTree = "<group>"; };
-		AB1980F81A7783AC00FE0669 /* CommonAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonAPI.h; sourceTree = "<group>"; };
-		AB1980F91A7783AC00FE0669 /* CommonAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommonAPI.m; sourceTree = "<group>"; };
-		AB1980FA1A7783AC00FE0669 /* EmployeeAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmployeeAPI.h; sourceTree = "<group>"; };
-		AB1980FB1A7783AC00FE0669 /* EmployeeAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmployeeAPI.m; sourceTree = "<group>"; };
-		AB1980FC1A7783AC00FE0669 /* InitializationAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InitializationAPI.h; sourceTree = "<group>"; };
-		AB1980FD1A7783AC00FE0669 /* InitializationAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InitializationAPI.m; sourceTree = "<group>"; };
-		AB1980FE1A7783AC00FE0669 /* OrgAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrgAPI.h; sourceTree = "<group>"; };
-		AB1980FF1A7783AC00FE0669 /* OrgAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrgAPI.m; sourceTree = "<group>"; };
-		AB1981001A7783AC00FE0669 /* SysAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SysAPI.h; sourceTree = "<group>"; };
-		AB1981011A7783AC00FE0669 /* SysAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SysAPI.m; sourceTree = "<group>"; };
-		AB1981031A7783AC00FE0669 /* ORGCommonBiz.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORGCommonBiz.h; sourceTree = "<group>"; };
-		AB1981041A7783AC00FE0669 /* ORGCommonBiz.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ORGCommonBiz.m; sourceTree = "<group>"; };
-		AB1981051A7783AC00FE0669 /* ORGServiceBiz.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORGServiceBiz.h; sourceTree = "<group>"; };
-		AB1981061A7783AC00FE0669 /* ORGServiceBiz.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ORGServiceBiz.m; sourceTree = "<group>"; };
-		AB1981071A7783AC00FE0669 /* SYSCommonBiz.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYSCommonBiz.h; sourceTree = "<group>"; };
-		AB1981081A7783AC00FE0669 /* SYSCommonBiz.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SYSCommonBiz.m; sourceTree = "<group>"; };
-		AB19810A1A7783AC00FE0669 /* ORGCommonOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORGCommonOperation.h; sourceTree = "<group>"; };
-		AB19810B1A7783AC00FE0669 /* ORGCommonOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ORGCommonOperation.m; sourceTree = "<group>"; };
-		AB19810C1A7783AC00FE0669 /* ORGServiceOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORGServiceOperation.h; sourceTree = "<group>"; };
-		AB19810D1A7783AC00FE0669 /* ORGServiceOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ORGServiceOperation.m; sourceTree = "<group>"; };
-		AB19810E1A7783AC00FE0669 /* SYSCommonOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYSCommonOperation.h; sourceTree = "<group>"; };
-		AB19810F1A7783AC00FE0669 /* SYSCommonOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SYSCommonOperation.m; sourceTree = "<group>"; };
-		AB1981101A7783AC00FE0669 /* SYSGetConfigOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYSGetConfigOperation.h; sourceTree = "<group>"; };
-		AB1981111A7783AC00FE0669 /* SYSGetConfigOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SYSGetConfigOperation.m; sourceTree = "<group>"; };
-		AB1981131A7783AC00FE0669 /* OrgCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrgCache.h; sourceTree = "<group>"; };
-		AB1981141A7783AC00FE0669 /* OrgCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrgCache.m; sourceTree = "<group>"; };
-		AB1981151A7783AC00FE0669 /* OrgServiceCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrgServiceCache.h; sourceTree = "<group>"; };
-		AB1981161A7783AC00FE0669 /* OrgServiceCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrgServiceCache.m; sourceTree = "<group>"; };
-		AB1981171A7783AC00FE0669 /* SysCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SysCache.h; sourceTree = "<group>"; };
-		AB1981181A7783AC00FE0669 /* SysCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SysCache.m; sourceTree = "<group>"; };
 		AB19811A1A7783AC00FE0669 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
 		AB19811B1A7783AC00FE0669 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
 		AB19811C1A7783AC00FE0669 /* DCViewController+PopAndDismiss.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DCViewController+PopAndDismiss.h"; sourceTree = "<group>"; };
@@ -342,8 +295,6 @@
 		AB19811F1A7783AC00FE0669 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		AB1981201A7783AC00FE0669 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
 		AB1981211A7783AC00FE0669 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
-		AB1981231A7783AC00FE0669 /* OrgStorage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrgStorage.h; sourceTree = "<group>"; };
-		AB1981241A7783AC00FE0669 /* OrgStorage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrgStorage.m; sourceTree = "<group>"; };
 		AB1981261A7783AC00FE0669 /* CellSelectedBackgroundView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CellSelectedBackgroundView.h; sourceTree = "<group>"; };
 		AB1981271A7783AC00FE0669 /* CellSelectedBackgroundView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CellSelectedBackgroundView.m; sourceTree = "<group>"; };
 		AB1981291A7783AC00FE0669 /* DatabaseConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DatabaseConstants.h; sourceTree = "<group>"; };
@@ -775,16 +726,14 @@
 		C352712C1AC2AEC5001F1DC4 /* UserAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserAPI.m; sourceTree = "<group>"; };
 		C352712E1AC2B0A1001F1DC4 /* UserViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserViewModel.h; sourceTree = "<group>"; };
 		C352712F1AC2B0A1001F1DC4 /* UserViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserViewModel.m; sourceTree = "<group>"; };
-		C35271311AC2B191001F1DC4 /* OrgEntities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrgEntities.h; sourceTree = "<group>"; };
-		C35271321AC2B191001F1DC4 /* OrgEntities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrgEntities.m; sourceTree = "<group>"; };
-		C35271331AC2B191001F1DC4 /* SysEntities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SysEntities.h; sourceTree = "<group>"; };
-		C35271341AC2B191001F1DC4 /* SysEntities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SysEntities.m; sourceTree = "<group>"; };
-		C35271351AC2B191001F1DC4 /* WorkEntities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WorkEntities.h; sourceTree = "<group>"; };
-		C35271361AC2B191001F1DC4 /* WorkEntities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WorkEntities.m; sourceTree = "<group>"; };
-		C35271371AC2B191001F1DC4 /* LibraryEntities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LibraryEntities.h; sourceTree = "<group>"; };
-		C35271381AC2B191001F1DC4 /* LibraryEntities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LibraryEntities.m; sourceTree = "<group>"; };
 		C352713D1AC2C46B001F1DC4 /* MainDatabaseOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainDatabaseOperation.h; sourceTree = "<group>"; };
 		C352713E1AC2C46B001F1DC4 /* MainDatabaseOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainDatabaseOperation.m; sourceTree = "<group>"; };
+		C3923D3C1AC3B2850044D401 /* VideoBiz.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoBiz.h; sourceTree = "<group>"; };
+		C3923D3D1AC3B2850044D401 /* VideoBiz.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoBiz.m; sourceTree = "<group>"; };
+		C3923D3F1AC3B33E0044D401 /* VideoAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoAPI.h; sourceTree = "<group>"; };
+		C3923D401AC3B33E0044D401 /* VideoAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoAPI.m; sourceTree = "<group>"; };
+		C3923D421AC3B3CD0044D401 /* VideoViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoViewModel.h; sourceTree = "<group>"; };
+		C3923D431AC3B3CD0044D401 /* VideoViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoViewModel.m; sourceTree = "<group>"; };
 		C3BC030D1A82114400796D08 /* DCFileExplorerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCFileExplorerView.h; sourceTree = "<group>"; };
 		C3BC030E1A82114400796D08 /* DCFileExplorerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCFileExplorerView.m; sourceTree = "<group>"; };
 		C9862ABA1A89F57D00B7B191 /* UIButton+Extensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Extensions.h"; sourceTree = "<group>"; };
@@ -1035,71 +984,8 @@
 			children = (
 				AB1981191A7783AC00FE0669 /* Controller */,
 				AB1981251A7783AC00FE0669 /* View */,
-				AB1980F71A7783AC00FE0669 /* API */,
-				AB1981021A7783AC00FE0669 /* Biz */,
-				AB1981091A7783AC00FE0669 /* BizOperation */,
-				AB1981221A7783AC00FE0669 /* Storage */,
-				AB1981121A7783AC00FE0669 /* Cache */,
 			);
 			path = Common;
-			sourceTree = "<group>";
-		};
-		AB1980F71A7783AC00FE0669 /* API */ = {
-			isa = PBXGroup;
-			children = (
-				AB1980F81A7783AC00FE0669 /* CommonAPI.h */,
-				AB1980F91A7783AC00FE0669 /* CommonAPI.m */,
-				AB1980FA1A7783AC00FE0669 /* EmployeeAPI.h */,
-				AB1980FB1A7783AC00FE0669 /* EmployeeAPI.m */,
-				AB1980FC1A7783AC00FE0669 /* InitializationAPI.h */,
-				AB1980FD1A7783AC00FE0669 /* InitializationAPI.m */,
-				AB1980FE1A7783AC00FE0669 /* OrgAPI.h */,
-				AB1980FF1A7783AC00FE0669 /* OrgAPI.m */,
-				AB1981001A7783AC00FE0669 /* SysAPI.h */,
-				AB1981011A7783AC00FE0669 /* SysAPI.m */,
-			);
-			path = API;
-			sourceTree = "<group>";
-		};
-		AB1981021A7783AC00FE0669 /* Biz */ = {
-			isa = PBXGroup;
-			children = (
-				AB1981031A7783AC00FE0669 /* ORGCommonBiz.h */,
-				AB1981041A7783AC00FE0669 /* ORGCommonBiz.m */,
-				AB1981051A7783AC00FE0669 /* ORGServiceBiz.h */,
-				AB1981061A7783AC00FE0669 /* ORGServiceBiz.m */,
-				AB1981071A7783AC00FE0669 /* SYSCommonBiz.h */,
-				AB1981081A7783AC00FE0669 /* SYSCommonBiz.m */,
-			);
-			path = Biz;
-			sourceTree = "<group>";
-		};
-		AB1981091A7783AC00FE0669 /* BizOperation */ = {
-			isa = PBXGroup;
-			children = (
-				AB19810A1A7783AC00FE0669 /* ORGCommonOperation.h */,
-				AB19810B1A7783AC00FE0669 /* ORGCommonOperation.m */,
-				AB19810C1A7783AC00FE0669 /* ORGServiceOperation.h */,
-				AB19810D1A7783AC00FE0669 /* ORGServiceOperation.m */,
-				AB19810E1A7783AC00FE0669 /* SYSCommonOperation.h */,
-				AB19810F1A7783AC00FE0669 /* SYSCommonOperation.m */,
-				AB1981101A7783AC00FE0669 /* SYSGetConfigOperation.h */,
-				AB1981111A7783AC00FE0669 /* SYSGetConfigOperation.m */,
-			);
-			path = BizOperation;
-			sourceTree = "<group>";
-		};
-		AB1981121A7783AC00FE0669 /* Cache */ = {
-			isa = PBXGroup;
-			children = (
-				AB1981131A7783AC00FE0669 /* OrgCache.h */,
-				AB1981141A7783AC00FE0669 /* OrgCache.m */,
-				AB1981151A7783AC00FE0669 /* OrgServiceCache.h */,
-				AB1981161A7783AC00FE0669 /* OrgServiceCache.m */,
-				AB1981171A7783AC00FE0669 /* SysCache.h */,
-				AB1981181A7783AC00FE0669 /* SysCache.m */,
-			);
-			path = Cache;
 			sourceTree = "<group>";
 		};
 		AB1981191A7783AC00FE0669 /* Controller */ = {
@@ -1115,15 +1001,6 @@
 				AB19811D1A7783AC00FE0669 /* DCViewController+PopAndDismiss.m */,
 			);
 			path = Controller;
-			sourceTree = "<group>";
-		};
-		AB1981221A7783AC00FE0669 /* Storage */ = {
-			isa = PBXGroup;
-			children = (
-				AB1981231A7783AC00FE0669 /* OrgStorage.h */,
-				AB1981241A7783AC00FE0669 /* OrgStorage.m */,
-			);
-			path = Storage;
 			sourceTree = "<group>";
 		};
 		AB1981251A7783AC00FE0669 /* View */ = {
@@ -2386,6 +2263,8 @@
 			children = (
 				C352712B1AC2AEC5001F1DC4 /* UserAPI.h */,
 				C352712C1AC2AEC5001F1DC4 /* UserAPI.m */,
+				C3923D3F1AC3B33E0044D401 /* VideoAPI.h */,
+				C3923D401AC3B33E0044D401 /* VideoAPI.m */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -2395,6 +2274,8 @@
 			children = (
 				C35271251AC2AC01001F1DC4 /* UserBiz.h */,
 				C35271261AC2AC01001F1DC4 /* UserBiz.m */,
+				C3923D3C1AC3B2850044D401 /* VideoBiz.h */,
+				C3923D3D1AC3B2850044D401 /* VideoBiz.m */,
 			);
 			path = Biz;
 			sourceTree = "<group>";
@@ -2413,14 +2294,6 @@
 		C352711F1AC2AB92001F1DC4 /* Entities */ = {
 			isa = PBXGroup;
 			children = (
-				C35271311AC2B191001F1DC4 /* OrgEntities.h */,
-				C35271321AC2B191001F1DC4 /* OrgEntities.m */,
-				C35271331AC2B191001F1DC4 /* SysEntities.h */,
-				C35271341AC2B191001F1DC4 /* SysEntities.m */,
-				C35271351AC2B191001F1DC4 /* WorkEntities.h */,
-				C35271361AC2B191001F1DC4 /* WorkEntities.m */,
-				C35271371AC2B191001F1DC4 /* LibraryEntities.h */,
-				C35271381AC2B191001F1DC4 /* LibraryEntities.m */,
 				C35271201AC2AB92001F1DC4 /* Entities.h */,
 				C35271211AC2AB92001F1DC4 /* Entities.m */,
 			);
@@ -2439,6 +2312,8 @@
 			children = (
 				C352712E1AC2B0A1001F1DC4 /* UserViewModel.h */,
 				C352712F1AC2B0A1001F1DC4 /* UserViewModel.m */,
+				C3923D421AC3B3CD0044D401 /* VideoViewModel.h */,
+				C3923D431AC3B3CD0044D401 /* VideoViewModel.m */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -2672,9 +2547,7 @@
 			files = (
 				C35270B21AC2A4C7001F1DC4 /* HPScrollerView.m in Sources */,
 				AB1982EF1A7783AD00FE0669 /* DCInputView.m in Sources */,
-				AB1982B01A7783AD00FE0669 /* OrgCache.m in Sources */,
 				AB1982B31A7783AD00FE0669 /* BaseViewController.m in Sources */,
-				AB1982A61A7783AD00FE0669 /* InitializationAPI.m in Sources */,
 				C35270A91AC2A4C7001F1DC4 /* ClassificationTableViewProtocol.m in Sources */,
 				AB1982FA1A7783AD00FE0669 /* rijndael.c in Sources */,
 				C35270A51AC2A4C7001F1DC4 /* ChannelTableViewCell.m in Sources */,
@@ -2682,11 +2555,9 @@
 				AB19829C1A7783AD00FE0669 /* BizOperation.m in Sources */,
 				C35270B61AC2A4C7001F1DC4 /* ICFansListProtocol.m in Sources */,
 				AB1982BC1A7783AD00FE0669 /* MenuViewController.m in Sources */,
-				AB1982AD1A7783AD00FE0669 /* ORGServiceOperation.m in Sources */,
 				AB1982B81A7783AD00FE0669 /* CellSelectedBackgroundView.m in Sources */,
 				C35270A41AC2A4C7001F1DC4 /* ChannelTableViewProtocol.m in Sources */,
 				C9862ADF1A89F57D00B7B191 /* HZCalendarDataSouce.m in Sources */,
-				C352713A1AC2B191001F1DC4 /* SysEntities.m in Sources */,
 				AB1982F61A7783AD00FE0669 /* AES.m in Sources */,
 				AB1982BF1A7783AD00FE0669 /* MenuTitleStyleCell.m in Sources */,
 				AB1982FF1A7783AD00FE0669 /* AFNetworkReachabilityManager.m in Sources */,
@@ -2696,15 +2567,12 @@
 				C35270BB1AC2A4C7001F1DC4 /* ICDefinitionCell.m in Sources */,
 				C352712D1AC2AEC5001F1DC4 /* UserAPI.m in Sources */,
 				AB1982ED1A7783AD00FE0669 /* DCReachability.m in Sources */,
-				AB1982AC1A7783AD00FE0669 /* ORGCommonOperation.m in Sources */,
 				C35270AA1AC2A4C7001F1DC4 /* SearchViewController.m in Sources */,
 				AB1983081A7783AD00FE0669 /* UIAlertView+AFNetworking.m in Sources */,
 				ABC121A41A78C79B0064D3D0 /* DCMultiTableView.m in Sources */,
 				C35271271AC2AC01001F1DC4 /* UserBiz.m in Sources */,
 				C35270AB1AC2A4C7001F1DC4 /* SearchTableViewProtocol.m in Sources */,
 				AB1982E81A7783AD00FE0669 /* DCObjectCopyingAdditions.m in Sources */,
-				AB1982AE1A7783AD00FE0669 /* SYSCommonOperation.m in Sources */,
-				AB1982A51A7783AD00FE0669 /* EmployeeAPI.m in Sources */,
 				C35270AE1AC2A4C7001F1DC4 /* HPHeaderSegmentButtonProtocol.m in Sources */,
 				C35270B31AC2A4C7001F1DC4 /* IndividualCenterViewController.m in Sources */,
 				AB1983101A7783AD00FE0669 /* FMDatabasePool.m in Sources */,
@@ -2712,14 +2580,13 @@
 				C35270AC1AC2A4C7001F1DC4 /* HomePageViewController.m in Sources */,
 				AB1982F41A7783AD00FE0669 /* DCStack2D.m in Sources */,
 				C35270A81AC2A4C7001F1DC4 /* ClassificationcollectionViewProtocol.m in Sources */,
-				C352713B1AC2B191001F1DC4 /* WorkEntities.m in Sources */,
 				AB1983741A7796E700FE0669 /* DCTableView.m in Sources */,
 				ABC121B11A78CA800064D3D0 /* DCGridView+ProtocolShortcuts.m in Sources */,
+				C3923D411AC3B33E0044D401 /* VideoAPI.m in Sources */,
 				AB1982991A7783AD00FE0669 /* Biz.m in Sources */,
 				C35270B01AC2A4C7001F1DC4 /* HPContentView.m in Sources */,
 				C35270B51AC2A4C7001F1DC4 /* ICCollectionProgramViewProtocol.m in Sources */,
 				C3BC030F1A82114400796D08 /* DCFileExplorerView.m in Sources */,
-				AB1982AA1A7783AD00FE0669 /* ORGServiceBiz.m in Sources */,
 				AB1982E41A7783AD00FE0669 /* DCDatabase.m in Sources */,
 				AB1982F11A7783AD00FE0669 /* DCSegmentButton.m in Sources */,
 				C35270A21AC2A4C7001F1DC4 /* ChannelViewController.m in Sources */,
@@ -2728,7 +2595,6 @@
 				AB1983111A7783AD00FE0669 /* FMDatabaseQueue.m in Sources */,
 				AB1982FD1A7783AD00FE0669 /* AFHTTPRequestOperationManager.m in Sources */,
 				C35270A11AC2A4C7001F1DC4 /* ChannelDetailViewController.m in Sources */,
-				AB1982AF1A7783AD00FE0669 /* SYSGetConfigOperation.m in Sources */,
 				AB19830E1A7783AD00FE0669 /* FMDatabase.m in Sources */,
 				AB1982BD1A7783AD00FE0669 /* MenuImageStyleCell.m in Sources */,
 				C35270BA1AC2A4C7001F1DC4 /* ICPlayDefinitionProtocol.m in Sources */,
@@ -2756,18 +2622,15 @@
 				AB19830A1A7783AD00FE0669 /* UIImageView+AFNetworking.m in Sources */,
 				AB19829B1A7783AD00FE0669 /* BizNetworkOperation.m in Sources */,
 				AB1983011A7783AD00FE0669 /* AFURLConnectionOperation.m in Sources */,
-				AB1982A71A7783AD00FE0669 /* OrgAPI.m in Sources */,
 				C35270AD1AC2A4C7001F1DC4 /* HPBottomViewProtocol.m in Sources */,
 				C352712A1AC2AD80001F1DC4 /* UserBizOperation.m in Sources */,
 				AB1983761A7796E700FE0669 /* DCTableViewProxy.m in Sources */,
 				C35270B41AC2A4C7001F1DC4 /* ICCacheDefinitionProtocol.m in Sources */,
 				AB1982A01A7783AD00FE0669 /* SFACache.m in Sources */,
 				AB19830C1A7783AD00FE0669 /* UIRefreshControl+AFNetworking.m in Sources */,
-				C35271391AC2B191001F1DC4 /* OrgEntities.m in Sources */,
 				AB1983751A7796E700FE0669 /* DCTableViewCell.m in Sources */,
 				AB1982C21A7783AD00FE0669 /* HRPMenuView.m in Sources */,
 				C35270C61AC2A4C7001F1DC4 /* ICListView.m in Sources */,
-				AB1982AB1A7783AD00FE0669 /* SYSCommonBiz.m in Sources */,
 				AB1983041A7783AD00FE0669 /* AFURLSessionManager.m in Sources */,
 				AB1983721A7796E700FE0669 /* DCDrawerView.m in Sources */,
 				AB1983731A7796E700FE0669 /* DCTableView+DataSourceCaller.m in Sources */,
@@ -2776,6 +2639,7 @@
 				AB1982B51A7783AD00FE0669 /* MainViewController.m in Sources */,
 				AB1982E71A7783AD00FE0669 /* DCObject.m in Sources */,
 				C352713F1AC2C46B001F1DC4 /* MainDatabaseOperation.m in Sources */,
+				C3923D3E1AC3B2850044D401 /* VideoBiz.m in Sources */,
 				C35270B81AC2A4C7001F1DC4 /* ICListTableViewProtocol.m in Sources */,
 				C35270C81AC2A4C7001F1DC4 /* ICVersionView.m in Sources */,
 				AB1982F91A7783AD00FE0669 /* NSFileManager-AES.m in Sources */,
@@ -2790,7 +2654,6 @@
 				AB1982E51A7783AD00FE0669 /* DCDatabaseManager.m in Sources */,
 				AB19829E1A7783AD00FE0669 /* SFAObject.m in Sources */,
 				C35270BD1AC2A4C7001F1DC4 /* ICListTableViewCell.m in Sources */,
-				AB1982A41A7783AD00FE0669 /* CommonAPI.m in Sources */,
 				C35270C71AC2A4C7001F1DC4 /* ICOffineCacheView.m in Sources */,
 				ABC121A21A78C79B0064D3D0 /* DCMultiTableView+DataSourceCaller.m in Sources */,
 				AB1982E61A7783AD00FE0669 /* DCDatabaseObject.m in Sources */,
@@ -2799,7 +2662,6 @@
 				AB19830D1A7783AD00FE0669 /* UIWebView+AFNetworking.m in Sources */,
 				AB1983091A7783AD00FE0669 /* UIButton+AFNetworking.m in Sources */,
 				C35270C51AC2A4C7001F1DC4 /* ICHistoryView.m in Sources */,
-				AB1982B11A7783AD00FE0669 /* OrgServiceCache.m in Sources */,
 				ABC121B41A78CA800064D3D0 /* DCGridViewFooter.m in Sources */,
 				AB1983131A7783AD00FE0669 /* GTMStackTrace.m in Sources */,
 				C35270A71AC2A4C7001F1DC4 /* ClassificationViewController.m in Sources */,
@@ -2813,11 +2675,8 @@
 				C35270AF1AC2A4C7001F1DC4 /* HPBottomView.m in Sources */,
 				C9862ADD1A89F57D00B7B191 /* HZCalendarCell.m in Sources */,
 				C35270BE1AC2A4C7001F1DC4 /* ICProgramCell.m in Sources */,
-				C352713C1AC2B191001F1DC4 /* LibraryEntities.m in Sources */,
 				AB1982FB1A7783AD00FE0669 /* AFgzipRequestSerializer.m in Sources */,
-				AB1982B71A7783AD00FE0669 /* OrgStorage.m in Sources */,
 				AB1982F81A7783AD00FE0669 /* NSData-AES.m in Sources */,
-				AB1982A91A7783AD00FE0669 /* ORGCommonBiz.m in Sources */,
 				AB1983001A7783AD00FE0669 /* AFSecurityPolicy.m in Sources */,
 				C35270C91AC2A4C7001F1DC4 /* OAuth2ViewController.m in Sources */,
 				AB1983141A7783AD00FE0669 /* iConsole.m in Sources */,
@@ -2828,6 +2687,7 @@
 				C35270B11AC2A4C7001F1DC4 /* HPHeaderView.m in Sources */,
 				C35270C41AC2A4C7001F1DC4 /* ICFeedbackView.m in Sources */,
 				AB1983051A7783AD00FE0669 /* NSData+Godzippa.m in Sources */,
+				C3923D441AC3B3CD0044D401 /* VideoViewModel.m in Sources */,
 				AB1982DE1A7783AD00FE0669 /* PreparingView.m in Sources */,
 				AB1982A11A7783AD00FE0669 /* SFAStorage.m in Sources */,
 				AB1982E31A7783AD00FE0669 /* SettingsView.m in Sources */,
@@ -2835,12 +2695,10 @@
 				AB1982B61A7783AD00FE0669 /* RootViewController.m in Sources */,
 				C35270A61AC2A4C7001F1DC4 /* ChannelView.m in Sources */,
 				AB19829F1A7783AD00FE0669 /* DCResult.m in Sources */,
-				AB1982A81A7783AD00FE0669 /* SysAPI.m in Sources */,
 				AB1982E01A7783AD00FE0669 /* SettingsViewController.m in Sources */,
 				C9862ADC1A89F57D00B7B191 /* CalendarYearHeaderView.m in Sources */,
 				AB1983061A7783AD00FE0669 /* AFNetworkActivityIndicatorManager.m in Sources */,
 				AB1982EE1A7783AD00FE0669 /* NSString+HttpRequestAdditions.m in Sources */,
-				AB1982B21A7783AD00FE0669 /* SysCache.m in Sources */,
 				AB1983121A7783AD00FE0669 /* FMResultSet.m in Sources */,
 				AB19830F1A7783AD00FE0669 /* FMDatabaseAdditions.m in Sources */,
 			);

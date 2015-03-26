@@ -8,12 +8,12 @@
 
 #import "PreparingAPI.h"
 
-#import "OrgStorage.h"
+//#import "OrgStorage.h"
 //#import "FakeDatabase.h"
 
 @interface PreparingAPI ()
 
-@property (nonatomic,strong) OrgStorage *orgStorage;
+//@property (nonatomic,strong) OrgStorage *orgStorage;
 
 @end
 
@@ -28,9 +28,9 @@
   completion(YES ,nil);
 }
 
-- (OrgStorage *)orgStorage
-{
-  return [OrgStorage getInstance];
-}
+//- (OrgStorage *)orgStorage
+//{
+//  return [OrgStorage getInstance];
+//}
 
 @end

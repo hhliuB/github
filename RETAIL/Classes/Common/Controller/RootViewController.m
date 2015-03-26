@@ -12,7 +12,7 @@
 #import "PreparingViewController.h"
 
 #import "PreparingAPI.h"
-#import "EmployeeAPI.h"
+//#import "EmployeeAPI.h"
 
 #import "Macro.h"
 
@@ -22,7 +22,7 @@
 @property (nonatomic,strong) PreparingViewController *preparingViewController;
 
 @property (nonatomic,strong) PreparingAPI *preparingApi;
-@property (nonatomic,strong) EmployeeAPI *employeeApi;
+//@property (nonatomic,strong) EmployeeAPI *employeeApi;
 
 @end
 
@@ -71,7 +71,7 @@
     [self.preparingViewController setProgress:p];
     
   } completion:^(BOOL success, NSString *errMsg) {
-    [self.employeeApi reloadEmployees];
+//    [self.employeeApi reloadEmployees];
     
     if (success) {
       [self.preparingViewController.view fadeout:^{
@@ -115,10 +115,10 @@
   return GetInstance([PreparingAPI class], _preparingApi);
 }
 
-- (EmployeeAPI *)employeeApi
-{
-  return GetInstance([EmployeeAPI class], _employeeApi);
-}
+//- (EmployeeAPI *)employeeApi
+//{
+//  return GetInstance([EmployeeAPI class], _employeeApi);
+//}
 
 #pragma mark -
 #pragma mark Singleton Definition

@@ -9,10 +9,6 @@
 #import "UserBizOperation.h"
 #import "AFNetworking.h"
 
-#import "OrgEntities.h"
-
-#import "Biz.h"
-
 @implementation UserBizOperation
 
 - (void)getUserDetailedInformation:(void (^)())completion
@@ -26,10 +22,7 @@
   
   [mgr POST:@"https://openapi.youku.com/v2/users/myinfo.json" parameters:params success:^(AFHTTPRequestOperation *operation, NSDictionary *responseObject) {
     NSLog(@"%@",responseObject);
-    ContectInfo *com = [[ContectInfo alloc]initWithDictionary:responseObject];
-    Biz *biz = [[Biz alloc]init];
-    
-    [biz.orgDatabase updateObjects:[NSArray arrayWithObjects:com, nil]];
+
 
     completion();
 
@@ -48,8 +41,6 @@
 //    NSLog(@"请求失败--%@",error);
 //    completion();
 //  }];
-  
-  
   
 }
 

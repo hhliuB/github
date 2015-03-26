@@ -10,6 +10,5 @@
 
 @interface UserBizOperation : BizNetworkOperation
 
-- (void)getUserDetailedInformation:(void (^)())completion;
 
 @end

@@ -8,15 +8,38 @@
 
 #import "Entities.h"
 
-@implementation FirstEntity
+@implementation User
+
+- (instancetype)initWithDictionary:(NSDictionary *)dictionary
+{
+  self = [super initWithDictionary:dictionary];
+  if (self) {
+    NSDictionary *props = [self undefinedProperties];
+    
+    NSString *description = props[@"description"];
+    if (description) {
+      _uDescription = description;
+    }
+  }
+  return self;
+}
 
 @end
 
-@implementation SecondEntity
+@implementation Video
 
-+ (NSArray *)primaryKeys
+- (instancetype)initWithDictionary:(NSDictionary *)dictionary
 {
-  return @[@"title"];
+  self = [super initWithDictionary:dictionary];
+  if (self) {
+    NSDictionary *props = [self undefinedProperties];
+    
+    NSString *description = props[@"description"];
+    if (description) {
+      _vDescription = description;
+    }
+  }
+  return self;
 }
 
 @end

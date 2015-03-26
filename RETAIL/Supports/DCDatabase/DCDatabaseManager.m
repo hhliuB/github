@@ -15,7 +15,6 @@
   if (self) {
     _dbDict = [NSMutableDictionary dictionary];
     _directory = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES)[0];
-    NSLog(@"dir = %@",_directory);
   }
   
   return self;

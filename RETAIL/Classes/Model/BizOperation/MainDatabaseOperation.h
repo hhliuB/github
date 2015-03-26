@@ -8,11 +8,9 @@
 
 #import "BizDatabaseOperation.h"
 
-#import "SysEntities.h"
-
 @interface MainDatabaseOperation : BizDatabaseOperation
 
-- (NSString *)configValueForKey:(NSString *)key;
-- (Config *)configForKey:(NSString *)key;
+- (void)getUserDetailedInformation:(void (^)())completion;
+- (void)getVideos:(void (^)())completion;
 
 @end

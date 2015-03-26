@@ -18,10 +18,12 @@
 
 @implementation UserViewModel
 
-- (void)getUserDetailedInformation
+- (void)loadData:(void (^)())completion
 {
   [self.userAPI getUserDetailedInformation];
+
 }
+
 
 - (UserAPI *)userAPI
 {

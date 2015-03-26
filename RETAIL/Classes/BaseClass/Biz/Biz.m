@@ -10,20 +10,12 @@
 
 #import "DCDB.h"
 
-#define kSysDatabase     @"sys.db"
-#define kLoginDatabase   @"login.db"
-#define kOrgDatabase     @"org.db"
-#define kLibraryDatabase @"library.db"
-#define kCallDatabase    @"call.db"
+#define kMainDatabase     @"main.db"
 
 @interface Biz ()
 
 @property (nonatomic,strong) DCDatabaseManager *databaseManager;
-@property (nonatomic,strong) DCDatabase        *sysDatabase;
-@property (nonatomic,strong) DCDatabase        *loginDatabase;
-@property (nonatomic,strong) DCDatabase        *orgDatabase;
-@property (nonatomic,strong) DCDatabase        *libraryDatabase;
-@property (nonatomic,strong) DCDatabase        *callsDatabase;
+@property (nonatomic,strong) DCDatabase        *mainDatabase;
 
 @end
 
@@ -42,7 +34,7 @@
 - (DCDatabaseManager *)databaseManager
 {
   if (!_databaseManager) {
-    NSString *path = AppGroupDocumentsDirectory();
+    NSString *path = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES)[0];
     
     [[NSFileManager defaultManager] createDirectoryAtPath:path
                               withIntermediateDirectories:YES
@@ -57,64 +49,16 @@
   return _databaseManager;
 }
 
-- (DCDatabase *)sysDatabase
+- (DCDatabase *)mainDatabase
 {
-  if (!_sysDatabase) {
-    _sysDatabase= [self database:kSysDatabase withKey:nil];
+  if (!_mainDatabase) {
+    _mainDatabase = [self database:kMainDatabase withKey:nil];
   }
   
-  _sysDatabase.allowsLogStatement = kDatabaseAllowsLogStatement;
-  _sysDatabase.allowsLogError     = kDatabaseAllowsLogError;
+  _mainDatabase.allowsLogStatement = kDatabaseAllowsLogStatement;
+  _mainDatabase.allowsLogError     = kDatabaseAllowsLogError;
   
-  return _sysDatabase;
-}
-
-- (DCDatabase *)loginDatabase
-{
-  if (!_loginDatabase) {
-    _loginDatabase = [self database:kLoginDatabase withKey:nil];
-  }
-  
-  _loginDatabase.allowsLogStatement = kDatabaseAllowsLogStatement;
-  _loginDatabase.allowsLogError     = kDatabaseAllowsLogError;
-    
-  return _loginDatabase;
-}
-
-- (DCDatabase *)orgDatabase
-{
-  if (!_orgDatabase) {
-    _orgDatabase = [self database:kOrgDatabase withKey:nil];
-  }
-  
-  _orgDatabase.allowsLogStatement = kDatabaseAllowsLogStatement;
-  _orgDatabase.allowsLogError     = kDatabaseAllowsLogError;
-  
-  return _orgDatabase;
-}
-
-- (DCDatabase *)libraryDatabase
-{
-  if (!_libraryDatabase) {
-    _libraryDatabase = [self database:kLibraryDatabase withKey:nil];
-  }
-  
-  _libraryDatabase.allowsLogStatement = kDatabaseAllowsLogStatement;
-  _libraryDatabase.allowsLogError     = kDatabaseAllowsLogError;
-  
-  return _libraryDatabase;
-}
-
-- (DCDatabase *)callDatabase
-{
-  if (!_callsDatabase) {
-    _callsDatabase = [self database:kCallDatabase withKey:nil];
-  }
-  
-  _callsDatabase.allowsLogStatement = kDatabaseAllowsLogStatement;
-  _callsDatabase.allowsLogError     = kDatabaseAllowsLogError;
-  
-  return _callsDatabase;
+  return _mainDatabase;
 }
 
 - (DCDatabase *)database:(NSString *)identifier withKey:(NSString *)key

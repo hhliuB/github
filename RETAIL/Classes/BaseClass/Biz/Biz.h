@@ -13,11 +13,7 @@
 
 @interface Biz : NSObject
 
-@property (nonatomic,readonly) DCDatabase *sysDatabase;
-@property (nonatomic,readonly) DCDatabase *loginDatabase;
-@property (nonatomic,readonly) DCDatabase *orgDatabase;
-@property (nonatomic,readonly) DCDatabase *libraryDatabase;
-@property (nonatomic,readonly) DCDatabase *callDatabase;
+@property (nonatomic,readonly) DCDatabase *mainDatabase;
 
 + (instancetype)biz;
 
