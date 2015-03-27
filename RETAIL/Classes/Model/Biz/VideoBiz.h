@@ -10,6 +10,8 @@
 
 @interface VideoBiz : Biz
 
-- (void)getVideos;
-
+- (void)getVideosWithCategory:(NSString *)category
+                         page:(int)page
+                        count:(int)count;
+- (NSArray *)videosWithCategory:(NSString *)category;
 @end

@@ -15,7 +15,7 @@
 
 + (NSArray *)primaryKeys
 {
-  return nil;
+  return @[@"Id"];
 }
 
 @end

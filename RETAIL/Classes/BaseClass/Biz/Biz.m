@@ -26,6 +26,18 @@
   return [[self alloc] init];
 }
 
+- (NSArray *)convertDBQueryResult:(NSArray *)queryResult toClass:(Class)objClass
+{
+  NSMutableArray *result = [NSMutableArray arrayWithCapacity:[queryResult count]];
+  
+  for (NSDictionary *dict in queryResult) {
+    id object = [[objClass alloc] initWithDictionary:dict];
+    [result addObject:object];
+  }
+  
+  return result;
+}
+
 #pragma mark -
 #pragma mark Properties
 

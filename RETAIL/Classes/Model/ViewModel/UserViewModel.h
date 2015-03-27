@@ -8,6 +8,10 @@
 
 #import "DCViewModel.h"
 
+#import "Entities.h"
+
 @interface UserViewModel : DCViewModel
+
+@property (nonatomic,readonly) User *me;
 
 @end

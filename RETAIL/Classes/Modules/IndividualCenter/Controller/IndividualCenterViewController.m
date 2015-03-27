@@ -49,7 +49,7 @@
   [super viewDidLoad];
   
   [self.userViewModel loadData:^{
-    
+    [self userInfomationSeting];
   }];
   
   self.lastListIndex = -1;
@@ -83,8 +83,9 @@
   self.detailView.fansListView.tableView.delegate = self.fansListProtocol;
   self.detailView.fansListView.tableView.dataSource = self.fansListProtocol;
   
-//  [[[Biz alloc]init] ]
-  
+
+  [self userInfomationSeting];
+
 }
 
 - (void)selectListItemAtIndex:(NSInteger)index
@@ -157,6 +158,37 @@
 - (void)selectPlayDefinitionWithString:(NSString *)string
 {
   [self.detailView.basicSettingView.playDefinitionLabel setText:string];
+}
+
+- (void)userInfomationSeting
+{
+  NSURL* url = [NSURL URLWithString:[self.userViewModel.me.avatar stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]];//网络图片url
+  NSData* data = [NSData dataWithContentsOfURL:url];//获取网咯图片数据
+  if(data!=nil)
+  {
+    self.detailView.basicInformationView.iconImage.image = [[UIImage alloc] initWithData:data];//根据图片数据流构造image
+  }
+
+  self.detailView.basicInformationView.descriptionLabel.text = self.userViewModel.me.description;
+  self.detailView.basicInformationView.nameLabel.text = self.userViewModel.me.name;
+  self.detailView.basicInformationView.genderLabel.text = self.userViewModel.me.gender;
+  self.detailView.basicInformationView.nickNameLabel.text = self.userViewModel.me.name;
+//  self.detailView.basicInformationView.fansCount.text = self.userViewModel.me.favorites_count;
+//  self.detailView.basicInformationView.descriptionLabel.text = self.userViewModel.me.description;
+  
+//  @property (nonatomic,readonly) UIImageView *iconImage;
+//  
+//  @property (nonatomic,readonly) UILabel  *nameLabel;
+//  @property (nonatomic,readonly) UILabel  *descriptionLabel;
+//  
+//  @property (nonatomic,readonly) UILabel  *nickNameLabel;
+//  @property (nonatomic,readonly) UILabel  *genderLabel;
+//  
+//  @property (nonatomic,readonly) UILabel  *fansCount;
+//  @property (nonatomic,readonly) UILabel  *favoritesCount;
+//  @property (nonatomic,readonly) UILabel  *videosCount;
+//  @property (nonatomic,readonly) UILabel  *followingCount;
+//  @property (nonatomic,readonly) UILabel  *registTime;
 }
 
 - (ICListTableViewProtocol *)listTableViewProtocol

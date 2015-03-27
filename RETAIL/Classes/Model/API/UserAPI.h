@@ -8,8 +8,13 @@
 
 #import "API.h"
 
+#import "Entities.h"
+
 @interface UserAPI : API
 
+@property (nonatomic,readonly) User *me;
+
 - (void)getUserDetailedInformation;
+- (void)selectUserInformation;
 
 @end

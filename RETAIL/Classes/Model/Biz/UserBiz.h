@@ -8,8 +8,13 @@
 
 #import "Biz.h"
 
+#import "Entities.h"
+
 @interface UserBiz : Biz
 
+@property (nonatomic,readonly) User *me;
+
 - (void)getUserDetailedInformation;
+- (void)selectUserInformation;
 
 @end

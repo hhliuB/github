@@ -8,13 +8,12 @@
 
 #import "UserBiz.h"
 
-#import "UserBizOperation.h"
-
 #import "MainDatabaseOperation.h"
+
+#import "Entities.h"
 
 @interface UserBiz()
 
-@property (nonatomic,strong) UserBizOperation *bizOperation;
 @property (nonatomic,strong) MainDatabaseOperation *databaseOperation;
 
 @end
@@ -23,16 +22,15 @@
 
 - (void)getUserDetailedInformation
 {
-  [self.databaseOperation getUserDetailedInformation:^{
-  }];
+//  [self.databaseOperation getUserDetailedInformationWithUser:<#(NSString *)#> access_token:<#(NSString *)#>
 }
 
-- (UserBizOperation *)bizOperation
+- (void)selectUserInformation
 {
-  if (!_bizOperation) {
-    _bizOperation = [[UserBizOperation alloc]init];
-  }
-  return _bizOperation;
+  NSString *sql = [NSString stringWithFormat:@"SELECT * FROM %@ \
+                                              ",[User tableName]];
+  NSArray *result = [self.mainDatabase query:sql];
+  _me = [[User alloc]initWithDictionary:[result lastObject]];
 }
 
 - (MainDatabaseOperation *)databaseOperation

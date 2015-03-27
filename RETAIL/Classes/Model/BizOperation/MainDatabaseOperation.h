@@ -10,7 +10,9 @@
 
 @interface MainDatabaseOperation : BizDatabaseOperation
 
-- (void)getUserDetailedInformation:(void (^)())completion;
-- (void)getVideos:(void (^)())completion;
-
+- (void)getUserDetailedInformationWithUser:(NSString *)client_id
+                              access_token:(NSString *)access_token;
+- (void)getVideosWithCategory:(NSString *)category
+                         page:(int)page
+                        count:(int)count;
 @end

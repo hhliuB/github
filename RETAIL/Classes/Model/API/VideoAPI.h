@@ -10,6 +10,9 @@
 
 @interface VideoAPI : API
 
-- (void)getVideos;
+- (void)getVideosWithCategory:(NSString *)category
+                         page:(int)page
+                        count:(int)count;
+- (void)videosWithCategory:(NSString *)category;
 
 @end

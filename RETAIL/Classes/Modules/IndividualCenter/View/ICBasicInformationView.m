@@ -25,12 +25,12 @@
     _iconImage.layer.cornerRadius = 50;
     
     _nameLabel = [self addLabelWithFrame:CGRectMake(x + 120, y, 300, 40)
-                                    text:@"liu925151086"
+                                    text:nil
                                textColor:kTextColor
                                     font:kLargestFont];
     
     _descriptionLabel = [self addLabelWithFrame:CGRectMake(x + 120, y + 40, 300, 50)
-                                           text:@"总觉得，床吧，铺得太整齐会有点安度晚年的意思，嗯，还是凌乱些，显得有朝气"
+                                           text:nil
                                       textColor:kTextColor
                                            font:kDefaultFont];
     _descriptionLabel.numberOfLines = 0;
@@ -42,44 +42,44 @@
            backgroundColor:kLineColor];
     
     _nickNameLabel = [self addLabelWithFrame:CGRectMake(x, y, 300, 40)
-                                        text:@"昵称：我个性我自己"
+                                        text:nil
                                    textColor:kTextColor
                                         font:kLargerFont];
 
     y += 30;
     _genderLabel = [self addLabelWithFrame:CGRectMake(x, y, 300, 30)
-                                      text:@"性别 ： 女"
+                                      text:nil
                                  textColor:kTextColor
                                       font:kLargerFont];
     y += 30;
     
     _favoritesCount = [self addLabelWithFrame:CGRectMake(x, y, 300, 30)
-                                         text:@"收藏数：0"
+                                         text:nil
                                     textColor:kTextColor
                                          font:kLargerFont];
     y += 30;
     
     _videosCount    = [self addLabelWithFrame:CGRectMake(x, y, 300, 30)
-                                         text:@"总视频数：10"
+                                         text:nil
                                     textColor:kTextColor
                                          font:kLargerFont];
     y += 30;
     
     _fansCount      = [self addLabelWithFrame:CGRectMake(x, y, 300, 30)
-                                         text:@"粉丝数：0"
+                                         text:nil
                                     textColor:kTextColor
                                          font:kLargerFont];
     y += 30;
     
     _followingCount = [self addLabelWithFrame:CGRectMake(x, y, 300, 30)
-                                         text:@"关注数：0"
+                                         text:nil
                                     textColor:kTextColor
                                          font:kLargerFont];
     
     y += 30;
     
     _registTime     = [self addLabelWithFrame:CGRectMake(x, y, 300, 30)
-                                         text:@"注册时间 ：2014年12月3日"
+                                         text:nil
                                     textColor:kTextColor
                                          font:kLargerFont];
     

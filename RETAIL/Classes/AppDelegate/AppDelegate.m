@@ -38,7 +38,7 @@ typedef NS_ENUM(NSInteger, ActionTypeWhenAppBecomeActive) {
   NSLog(@"%@", AppGroupDirectory());
   
 #if kIConsoleEnabled
-  self.window = [[iConsoleWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+//  self.window = [[iConsoleWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
 #else
   self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
 #endif
@@ -53,6 +53,7 @@ typedef NS_ENUM(NSInteger, ActionTypeWhenAppBecomeActive) {
   }
   else {
     self.window.rootViewController = self.rootViewController;
+    [self.rootViewController enter];
   }
   
   [self.window makeKeyAndVisible];
@@ -61,11 +62,11 @@ typedef NS_ENUM(NSInteger, ActionTypeWhenAppBecomeActive) {
   
   [self registerApplicationNotifications];
   
-#if kLoginEnabled
-  [self login];
-#else
-  [self enter];
-#endif
+//#if kLoginEnabled
+//  [self login];
+//#else
+//  [self enter];
+//#endif
   
   return YES;
 }

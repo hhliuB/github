@@ -32,7 +32,7 @@
 
 @interface Video : SFAObject
 
-@property (nonatomic,copy) NSString *Id;                 //视频唯一ID
+@property (nonatomic,copy) NSString *Id;             //视频唯一ID
 @property (nonatomic,copy) NSString *title;          //视频标题
 @property (nonatomic,copy) NSString *link;           //视频播放链接
 @property (nonatomic,copy) NSString *thumbnail;      //视频截图
@@ -47,16 +47,17 @@
 @property (nonatomic,copy) NSString *public_type;    //公开类型 all: 公开 friend: 仅好友观看 password: 输入密码观看
 @property (nonatomic,copy) NSString *copyright_type; //版权所有 original: 原创 reproduced: 转载
 
-@property (nonatomic,assign) int duration;           //视频时长，单位：秒
-@property (nonatomic,assign) int view_count;         //总播放数
-@property (nonatomic,assign) int favorite_count;     //总收藏数
-@property (nonatomic,assign) int comment_count;      //总评论数
-@property (nonatomic,assign) int up_count;           //总顶数
-@property (nonatomic,assign) int down_count;         //总踩数
+@property (nonatomic,assign) NSInteger duration;           //视频时长，单位：秒
+@property (nonatomic,assign) NSInteger view_count;         //总播放数
+@property (nonatomic,assign) NSInteger favorite_count;     //总收藏数
+@property (nonatomic,assign) NSInteger comment_count;      //总评论数
+@property (nonatomic,assign) NSInteger up_count;           //总顶数
+@property (nonatomic,assign) NSInteger down_count;         //总踩数
 
-@property (nonatomic,copy) User *user;               //上传用户对象
-@property (nonatomic,copy) NSArray *operation_limit; //操作限制 COMMENT_DISABLED: 禁评论 DOWNLOAD_DISABLED: 禁下载
-@property (nonatomic,copy) NSArray *streamtypes;     //视频格式 flvhd flv 3gphd 3gp hd hd2
 
+
+//@property (nonatomic,copy) User *user;               //上传用户对象
+//@property (nonatomic,copy) NSArray *operation_limit; //操作限制 COMMENT_DISABLED: 禁评论 DOWNLOAD_DISABLED: 禁下载
+//@property (nonatomic,copy) NSArray *streamtypes;     //视频格式 flvhd flv 3gphd 3gp hd hd2
 
 @end

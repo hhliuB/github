@@ -16,5 +16,6 @@
 @property (nonatomic,readonly) DCDatabase *mainDatabase;
 
 + (instancetype)biz;
+- (NSArray *)convertDBQueryResult:(NSArray *)queryResult toClass:(Class)objClass;
 
 @end

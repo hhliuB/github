@@ -20,7 +20,7 @@
 
 - (void)viewDidLoad
 {
-  [super viewDidLoad];
+//  [super viewDidLoad];
   // 创建UIWebView
   UIWebView *webView = [[UIWebView alloc]initWithFrame:self.view.bounds];
   
@@ -122,7 +122,9 @@
     // 切换控制器
     
     UIWindow *window = [UIApplication sharedApplication].keyWindow;
-    window.rootViewController = [[RootViewController alloc]init];
+    RootViewController *rootViewController = [[RootViewController alloc]init];
+    window.rootViewController = rootViewController;
+    [rootViewController enter];
     
   } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
     NSLog(@"请求失败--%@",error);

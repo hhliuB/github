@@ -21,6 +21,25 @@
 #import "DebugConfigs.h"
 #import "Utilities.h"
 
+static NSString *classifications[] = {
+                          @"电视剧",
+                          @"电影",
+                          @"动漫",
+                          @"综艺",
+                          @"搞笑",
+                          @"资讯",
+                          @"创意视频"
+};
+
+static NSString *lives[] = {
+                      @"音乐",
+                      @"游戏",
+                      @"体育",
+                      @"教育",
+                      @"科技",
+                      @"汽车"
+};
+
 #endif
 
 #endif

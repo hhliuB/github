@@ -20,7 +20,12 @@
 
 - (void)loadData:(void (^)())completion
 {
-  [self.videoAPI getVideos];
+  for (int i = 0; i < 7; i++) {
+    [self.videoAPI videosWithCategory:classifications[i]];
+  }
+  for (int i = 0; i < 6; i ++) {
+    [self.videoAPI videosWithCategory:lives[i]];
+  }
 }
 
 - (VideoAPI *)videoAPI

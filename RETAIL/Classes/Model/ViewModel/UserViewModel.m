@@ -21,7 +21,8 @@
 - (void)loadData:(void (^)())completion
 {
   [self.userAPI getUserDetailedInformation];
-
+  [self.userAPI selectUserInformation];
+  _me = self.userAPI.me;
 }
 
 

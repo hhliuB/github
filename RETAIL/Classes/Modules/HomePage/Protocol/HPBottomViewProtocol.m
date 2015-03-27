@@ -77,7 +77,7 @@ static NSString *title[] = {
   [cell.contentView addSubview:imageView];
   
   cell.transform = CGAffineTransformMakeRotation(M_PI /2);
-//  cell.backgroundColor = kLightBlueColor;
+  cell.backgroundColor = kLightBlueColor;
   cell.selectionStyle  = UITableViewCellSelectionStyleNone;
   
   return cell;

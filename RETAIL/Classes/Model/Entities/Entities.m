@@ -42,4 +42,12 @@
   return self;
 }
 
+
+
+- (NSDictionary *)replacedKeyFromPropertyName
+{
+  /** 属性ID映射成字典中的id */
+  return @{@"Id;" : @"id"};
+}
+
 @end

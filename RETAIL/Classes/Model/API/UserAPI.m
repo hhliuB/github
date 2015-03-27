@@ -23,6 +23,12 @@
   [self.biz getUserDetailedInformation];
 }
 
+- (void)selectUserInformation
+{
+  [self.biz selectUserInformation];
+  _me = self.biz.me;
+}
+
 - (UserBiz *)biz
 {
   if (!_biz) {
